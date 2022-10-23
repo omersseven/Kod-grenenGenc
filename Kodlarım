@@ -1,0 +1,25 @@
+print("""
+*********************Hesap Makinesi*********************
+
+1. Toplama
+2. Çıkarma
+3. Çarpma
+4. Bölme
+
+""")
+while True:
+    işlem =input("Yapmak İstedihiniz Deger...:")
+    print("*","*","*",sep="\n")
+    deger1 = int(input("1.Degeri Girin...:"))
+    deger2 = int(input("2.Degeri Girin...:"))
+
+    if işlem == "1":
+        print("{} ile {} toplamı {} dur".format(deger1,deger2,deger1+deger2))
+    elif işlem == "2":
+        print("{} ile {} Eksiginden {} kalır".format(deger1,deger2,deger1-deger2))
+    elif işlem == "3":
+        print("{} ile {} Çarpımından {} çıkar".format(deger1,deger2,deger1*deger2))
+    elif işlem == "4":
+        print("{} ile {} bölümünden {} Kalır".format(deger1,deger2,deger1 // deger2))
+    else:
+        print("Geçer Deger.")
